@@ -4,12 +4,12 @@ import { CreateUsersTable1674307725393 } from './migrations/1674307725393-Create
 import User from "../app/entities/User";
 
 export const AppDataSource = new DataSource({
-    type: "mariadb",
-    host: "localhost",
-    port: 3306,
+    type: "mysql",
+    database: "railway",
+    host: "containers-us-west-13.railway.app",
+    password: "cW9XMmDi3MM7hePIXJxO",
+    port: 5513,
     username: "root",
-    password: "9761",
-    database: "project_typeorm",
     synchronize: true,
     logging: false,
     entities: [User],
